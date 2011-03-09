@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Wed Mar 09 16:51:27 2011
+// Created by Actel SmartDesign Wed Mar 09 17:31:12 2011
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -48,18 +48,9 @@ mss_core mss_core_0 (
     .MSS_RESET_N(NSYSRESET),
 
     // Outputs
-    .UART_0_TXD( ),
-    .EMC_AB( ),
-    .EMC_BYTEN( ),
-    .EMC_CS0_N( ),
-    .EMC_CS1_N( ),
-    .EMC_OEN0_N( ),
-    .EMC_OEN1_N( ),
-    .EMC_CLK( ),
-    .EMC_RW_N( ),
+    .UART_0_TXD( )
 
     // Inouts
-    .EMC_DB( )
 
 );
 

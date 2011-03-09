@@ -1,6 +1,7 @@
 KEY LIBERO "9.0"
 KEY CAPTURE "9.0.3.7"
 KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "39f7f8ed-0b0e-49cf-bece-a4c7aee3a17d"
 KEY HDLTechnology "VERILOG"
 KEY VendorTechnology_Family "SmartFusion"
@@ -24,13 +25,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.2.101\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707479"
+TIME="1299709872"
 SIZE="945"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.2.101\mss_comps.v,hdl"
 STATE="utd"
-TIME="1299707479"
+TIME="1299709872"
 SIZE="25671"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.2.101\MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -42,128 +43,122 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ACE\1.0.104\MSS_ACE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707473"
+TIME="1299709862"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707473"
+TIME="1299709862"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.101\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707473"
+TIME="1299709863"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.101\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707474"
+TIME="1299709863"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707474"
-SIZE="252"
-PARENT="<project>\component\work\mss_core\mss_core.cxf"
-ENDFILE
-VALUE "<project>\component\Actel\SmartFusionMSS\MSS_EMI\1.0.100\MSS_EMI.cxf,actgen_cxf"
-STATE="utd"
-TIME="1299707474"
+TIME="1299709863"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.0.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709864"
 SIZE="253"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="253"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="253"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="254"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="252"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="254"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="253"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="254"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_WATCHDOG\1.0.101\MSS_WATCHDOG.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709865"
 SIZE="257"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\work\mss_core\MSS_CCC_0\mss_core_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707473"
+TIME="1299709862"
 SIZE="483"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\component\work\mss_core\MSS_CCC_0\mss_core_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1299707473"
+TIME="1299709862"
 SIZE="2905"
 PARENT="<project>\component\work\mss_core\MSS_CCC_0\mss_core_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\mss_core\mss_core.cxf,actgen_cxf"
 STATE="utd"
-TIME="1299707487"
-SIZE="12612"
+TIME="1299709873"
+SIZE="9138"
 ENDFILE
 VALUE "<project>\component\work\mss_core\mss_core.pdc,pdc"
 STATE="utd"
-TIME="1299707470"
-SIZE="15539"
+TIME="1299709858"
+SIZE="7491"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -173,40 +168,70 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\mss_core\mss_core.v,hdl"
 STATE="utd"
-TIME="1299707487"
-SIZE="19395"
+TIME="1299709872"
+SIZE="9372"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\mss_core\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1299707475"
+TIME="1299709864"
 SIZE="15502"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\mss_core\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1299707487"
-SIZE="1658"
+TIME="1299709872"
+SIZE="1485"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\top\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1299709897"
+SIZE="1470"
+PARENT="<project>\component\work\top\top.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\top\top.cxf,actgen_cxf"
+STATE="utd"
+TIME="1299709897"
+SIZE="2618"
+ENDFILE
+VALUE "<project>\component\work\top\top.pdc,pdc"
+STATE="utd"
+TIME="1299709897"
+SIZE="4322"
+PARENT="<project>\component\work\top\top.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\top\top.v,hdl"
+STATE="utd"
+TIME="1299709897"
+SIZE="423"
+PARENT="<project>\component\work\top\top.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1299707488"
+TIME="1299709874"
 SIZE="41"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.2.101\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1299707488"
+TIME="1299709874"
 SIZE="5460"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1299707488"
+TIME="1299709613"
 SIZE="670"
 PARENT="<project>\component\work\mss_core\mss_core.cxf"
 ENDFILE
@@ -239,13 +264,41 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 ENDLIST
+LIST "top::work"
+FILE "<project>\component\work\top\top.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\top\testbench.v,tb_hdl"
+VALUE "<project>\component\work\top\top.pdc,pdc"
 ENDLIST
 LIST AssociatedStimulus
+VALUE "<project>\component\work\top\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST top
+VALUE "<project>\component\work\top\testbench.v,tb_hdl"
+ENDLIST
 LIST mss_core
 VALUE "<project>\component\work\mss_core\testbench.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
+LIST top
+VALUE "<project>\component\work\top\testbench.v,tb_hdl"
+VALUE "<project>\component\work\top\top.pdc,pdc"
+ENDLIST
 LIST mss_core
 VALUE "<project>\simulation\user.bfm,sim"
 VALUE "<project>\simulation\test.bfm,sim"
@@ -332,6 +385,17 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "top::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -345,5 +409,6 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 DESIGNFLOW:
-ACTIVE_VIEW:0
+SD:top::work
+ACTIVE_VIEW:1
 ENDLIST

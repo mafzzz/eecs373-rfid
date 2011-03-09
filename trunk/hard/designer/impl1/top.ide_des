@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Zach\Documents\eecs373-rfid\hard\designer\impl1\top.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Zach\Documents\eecs373-rfid\hard\component\work\top\top.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

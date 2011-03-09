@@ -1,0 +1,10 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Zach\Documents\eecs373-rfid\hard\designer\impl1\mss_core.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Zach\Documents\eecs373-rfid\hard\component\work\mss_core\mss_core.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Zach\Documents\eecs373-rfid\hard\component\work\mss_core\mss_core.pdc;Used"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

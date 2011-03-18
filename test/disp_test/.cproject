@@ -15,54 +15,46 @@
 </extensions>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<configuration artifactExtension="" artifactName="disp_test" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug.1287213027" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug">
+<configuration artifactExtension="" artifactName="disp_test" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug.1287213027" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 <folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.debug.1287213027." name="/" resourcePath="">
 <toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.exe.debug.1093093167" name="Actel Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.exe.debug">
-<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.debug.492989215" name="Debug Platform" osList="all" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.debug"/>
+<targetPlatform archList="all" id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.debug.492989215" name="Debug Platform" osList="all" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.debug"/>
 <builder buildPath="${workspace_loc:/disp_test/Debug}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.debug.1262363521" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.exe.debug.2057293967" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.exe.debug">
-<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level.1449146906" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level" valueType="enumerated"/>
-<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level.1537564892" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.c.compiler.option.preprocessor.nostdinc.16417387" name="Do not search system directories (-nostdinc)" superClass="gnu.c.compiler.option.preprocessor.nostdinc"/>
-<option id="gnu.c.compiler.option.preprocessor.preprocess.2118890441" name="Preprocess only (-E)" superClass="gnu.c.compiler.option.preprocessor.preprocess"/>
-<option id="gnu.c.compiler.option.preprocessor.def.symbols.1372673966" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
-<option id="gnu.c.compiler.option.preprocessor.undef.symbol.442209157" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol"/>
-<option id="gnu.c.compiler.option.include.paths.673631171" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/src}&quot;"/>
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/hal/CortexM3/GNU}&quot;"/>
+<option id="gnu.c.compiler.option.preprocessor.nostdinc.1809746498" name="Do not search system directories (-nostdinc)" superClass="gnu.c.compiler.option.preprocessor.nostdinc"/>
+<option id="gnu.c.compiler.option.preprocessor.preprocess.1415574795" name="Preprocess only (-E)" superClass="gnu.c.compiler.option.preprocessor.preprocess"/>
+<option id="gnu.c.compiler.option.preprocessor.def.symbols.1908580539" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+<option id="gnu.c.compiler.option.preprocessor.undef.symbol.311994663" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol"/>
+<option id="gnu.c.compiler.option.include.paths.678846075" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/rfid-fridge/src/include}&quot;"/>
 </option>
-<option id="gnu.c.compiler.option.optimization.flags.1683741697" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags"/>
-<option id="gnu.c.compiler.option.debugging.other.677080309" name="Other debugging flags" superClass="gnu.c.compiler.option.debugging.other"/>
-<option id="gnu.c.compiler.option.warnings.syntax.936710105" name="Check syntax only (-fsyntax-only)" superClass="gnu.c.compiler.option.warnings.syntax"/>
-<option id="gnu.c.compiler.option.warnings.pedantic.842868721" name="Pedantic (-pedantic)" superClass="gnu.c.compiler.option.warnings.pedantic"/>
-<option id="gnu.c.compiler.option.warnings.pedantic.error.2076502383" name="Pedantic warnings as errors (-pedantic-errors)" superClass="gnu.c.compiler.option.warnings.pedantic.error"/>
-<option id="gnu.c.compiler.option.warnings.nowarn.2129860918" name="Inhibit all warnings (-w)" superClass="gnu.c.compiler.option.warnings.nowarn"/>
-<option id="gnu.c.compiler.option.warnings.allwarn.187171560" name="All warnings (-Wall)" superClass="gnu.c.compiler.option.warnings.allwarn"/>
-<option id="gnu.c.compiler.option.warnings.toerrors.1137694554" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors"/>
-<option id="gnu.c.compiler.option.misc.other.1139855891" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
-<option id="gnu.c.compiler.option.misc.verbose.2965510" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose"/>
-<option id="gnu.c.compiler.option.misc.ansi.1790159582" name="Support ANSI programs (-ansi)" superClass="gnu.c.compiler.option.misc.ansi"/>
+<option id="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level.670422435" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level"/>
+<option id="gnu.c.compiler.option.optimization.flags.1163248987" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags"/>
+<option id="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level.359730590" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.debugging.level"/>
+<option id="gnu.c.compiler.option.debugging.other.2126961740" name="Other debugging flags" superClass="gnu.c.compiler.option.debugging.other"/>
+<option id="gnu.c.compiler.option.warnings.syntax.906784110" name="Check syntax only (-fsyntax-only)" superClass="gnu.c.compiler.option.warnings.syntax"/>
+<option id="gnu.c.compiler.option.warnings.pedantic.1563369074" name="Pedantic (-pedantic)" superClass="gnu.c.compiler.option.warnings.pedantic"/>
+<option id="gnu.c.compiler.option.warnings.pedantic.error.982266600" name="Pedantic warnings as errors (-pedantic-errors)" superClass="gnu.c.compiler.option.warnings.pedantic.error"/>
+<option id="gnu.c.compiler.option.warnings.nowarn.1938060478" name="Inhibit all warnings (-w)" superClass="gnu.c.compiler.option.warnings.nowarn"/>
+<option id="gnu.c.compiler.option.warnings.allwarn.1991942664" name="All warnings (-Wall)" superClass="gnu.c.compiler.option.warnings.allwarn"/>
+<option id="gnu.c.compiler.option.warnings.toerrors.717087810" name="Warnings as errors (-Werror)" superClass="gnu.c.compiler.option.warnings.toerrors"/>
+<option id="gnu.c.compiler.option.misc.other.1700305983" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+<option id="gnu.c.compiler.option.misc.verbose.1037025838" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose"/>
+<option id="gnu.c.compiler.option.misc.ansi.1903014874" name="Support ANSI programs (-ansi)" superClass="gnu.c.compiler.option.misc.ansi"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.51673036" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
-<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug.1642571680" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug">
-<option id="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.optimization.level.1840291663" name="Optimization Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
-<option id="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.debugging.level.2031273489" name="Debug Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
-</tool>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug.1642571680" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug.419817431" name="GNU C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.debug">
-<option id="gnu.c.link.option.nostart.969799205" name="Do not use standard start files (-nostartfiles)" superClass="gnu.c.link.option.nostart"/>
-<option id="gnu.c.link.option.nodeflibs.716672013" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.c.link.option.nodeflibs"/>
-<option id="gnu.c.link.option.nostdlibs.709340296" name="No startup or default libs (-nostdlib)" superClass="gnu.c.link.option.nostdlibs"/>
-<option id="gnu.c.link.option.strip.954330989" name="Omit all symbol information (-s)" superClass="gnu.c.link.option.strip"/>
-<option id="gnu.c.link.option.noshared.401664015" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared"/>
-<option id="gnu.c.link.option.libs.786942269" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
-<listOptionValue builtIn="false" value="src"/>
-</option>
-<option id="gnu.c.link.option.paths.1490432580" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/Debug}&quot;"/>
-</option>
-<option id="gnu.c.link.option.ldflags.1234242263" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../src/CMSIS/startup_gcc/debug-in-actel-smartfusion-esram.ld" valueType="string"/>
-<option id="gnu.c.link.option.other.886597491" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other"/>
-<option id="gnu.c.link.option.userobjs.2097385209" name="Other objects" superClass="gnu.c.link.option.userobjs"/>
+<option id="gnu.c.link.option.nostart.1567215871" name="Do not use standard start files (-nostartfiles)" superClass="gnu.c.link.option.nostart"/>
+<option id="gnu.c.link.option.nodeflibs.330220553" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.c.link.option.nodeflibs"/>
+<option id="gnu.c.link.option.nostdlibs.1014005028" name="No startup or default libs (-nostdlib)" superClass="gnu.c.link.option.nostdlibs"/>
+<option id="gnu.c.link.option.strip.1147754533" name="Omit all symbol information (-s)" superClass="gnu.c.link.option.strip"/>
+<option id="gnu.c.link.option.noshared.1631418428" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared"/>
+<option id="gnu.c.link.option.libs.461206288" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+<option id="gnu.c.link.option.paths.632355850" name="Library search path (-L)" superClass="gnu.c.link.option.paths"/>
+<option id="gnu.c.link.option.ldflags.1003192132" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../../src/CMSIS/startup_gcc/debug-in-actel-smartfusion-esram.ld" valueType="string"/>
+<option id="gnu.c.link.option.other.378245602" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other"/>
+<option id="gnu.c.link.option.userobjs.1321205669" name="Other objects" superClass="gnu.c.link.option.userobjs"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.629551728" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 <additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -70,25 +62,32 @@
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.cpp.linker.cross.cortexm3.exe.debug.394090775" name="GNU C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cross.cortexm3.exe.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.exe.debug.532138321" name="GNU Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cross.cortexm3.exe.debug">
+<option id="gnu.both.asm.option.flags.1184973394" name="Assembler flags" superClass="gnu.both.asm.option.flags"/>
+<option id="gnu.both.asm.option.include.paths.809270796" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+<option id="gnu.both.asm.option.warnings.nowarn.1777951899" name="Suppress warnings (-W)" superClass="gnu.both.asm.option.warnings.nowarn"/>
+<option id="gnu.both.asm.option.version.1370283612" name="Announce version (-v)" superClass="gnu.both.asm.option.version"/>
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.733713855" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 <tool id="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.debug.429397607" name="Memory map generator" superClass="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.debug.1124991689" name="GNU Binary Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.debug">
-<option id="gnu.objcopy.bin.option.flags.1036099399" name="Binary Generator Flags" superClass="gnu.objcopy.bin.option.flags"/>
+<option id="gnu.objcopy.bin.option.flags.1494218638" name="Binary Generator Flags" superClass="gnu.objcopy.bin.option.flags"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.debug.366526267" name="GNU Intel Hex File Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.debug">
-<option id="gnu.objcopy.ihex.option.flags.1909667629" name="IHex Generator Flags" superClass="gnu.objcopy.ihex.option.flags"/>
+<option id="gnu.objcopy.ihex.option.flags.1845440108" name="IHex Generator Flags" superClass="gnu.objcopy.ihex.option.flags"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.srec.debug.1176218" name="GNU S-Record Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.srec.debug">
-<option id="gnu.objcopy.srec.option.flags.400367570" name="S-Record Generator Flags" superClass="gnu.objcopy.srec.option.flags"/>
+<option id="gnu.objcopy.srec.option.flags.1967187230" name="S-Record Generator Flags" superClass="gnu.objcopy.srec.option.flags"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.debug.919903825" name="GNU Listing Generator" superClass="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.debug">
-<option id="gnu.objdump.lst.option.flags.1215584729" name="Listing Generator Flags" superClass="gnu.objdump.lst.option.flags"/>
+<option id="gnu.objdump.lst.option.flags.579007691" name="Listing Generator Flags" superClass="gnu.objdump.lst.option.flags"/>
 </tool>
 </toolChain>
 </folderInfo>
 </configuration>
 </storageModule>
+
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 <storageModule moduleId="scannerConfiguration">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.cortexm3.ActelCortexM3ManagedMakePerProjectProfile">
@@ -368,7 +367,6 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 </cconfiguration>
 <cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024">
 <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -385,16 +383,16 @@
 <configuration artifactName="disp_test" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024" name="Release" parent="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release">
 <folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024." name="/" resourcePath="">
 <toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.exe.release.693883577" name="Actel Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.exe.release">
-<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.release.306080280" name="Release Platform" osList="all" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.release"/>
-<builder buildPath="${workspace_loc:/disp_test/Release}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.release.399753671" managedBuildOn="true" name="Gnu Make.Release" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.release"/>
+<targetPlatform archList="all" id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.release.306080280" name="Release Platform" osList="all" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.exe.release"/>
+<builder buildPath="${workspace_loc:/disp_test/Release}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.release.399753671" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.exe.release"/>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.exe.release.1177302097" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.exe.release">
-<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.cross.cortexm3.exe.release.option.optimization.level.955835569" superClass="gnu.c.compiler.cross.cortexm3.exe.release.option.optimization.level" valueType="enumerated"/>
-<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.cross.cortexm3.exe.release.option.debugging.level.212801256" superClass="gnu.c.compiler.cross.cortexm3.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.cross.cortexm3.exe.release.option.optimization.level.955835569" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.exe.release.option.optimization.level" valueType="enumerated"/>
+<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.cross.cortexm3.exe.release.option.debugging.level.212801256" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1965689889" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.release.982952147" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.release">
-<option id="gnu.cpp.compiler.cross.cortexm3.exe.release.option.optimization.level.467707704" superClass="gnu.cpp.compiler.cross.cortexm3.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
-<option id="gnu.cpp.compiler.cross.cortexm3.exe.release.option.debugging.level.2093092447" superClass="gnu.cpp.compiler.cross.cortexm3.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+<option id="gnu.cpp.compiler.cross.cortexm3.exe.release.option.optimization.level.467707704" name="Optimization Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+<option id="gnu.cpp.compiler.cross.cortexm3.exe.release.option.debugging.level.2093092447" name="Debug Level" superClass="gnu.cpp.compiler.cross.cortexm3.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.release.1171678931" name="GNU C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cross.cortexm3.exe.release">
 <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1201886054" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
@@ -415,6 +413,9 @@
 </folderInfo>
 </configuration>
 </storageModule>
+
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 <storageModule moduleId="scannerConfiguration">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.cortexm3.ActelCortexM3ManagedMakePerProjectProfile">
@@ -694,7 +695,6 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">

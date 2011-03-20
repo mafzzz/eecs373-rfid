@@ -1,12 +1,13 @@
 #include "device/disp.h"
 
+extern int main(void);
 int main()
 {
 	/* Initialize devices */
 	disp_init();
 	
 	/* Start application */
-	main_disp_test();
+	main();
 	
 	while(1){};
 }

@@ -22,14 +22,8 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
-EXECUTABLES += \
-rfid_read \
-
 MEMORYMAP += \
 memory-map.xml \
-
-BINFILES += \
-rfid_read.bin \
 
 IHEXFILES += \
 rfid_read.hex \
@@ -48,46 +42,40 @@ all: rfid_read secondary-outputs
 rfid_read: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU C Linker'
-	arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 -specs=bare.specs  -o"rfid_read" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 -specs=bare.specs -Wl,-Map=$(EXECUTABLE).map -o"rfid_read" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-memory-map.xml: $(EXECUTABLES)
+memory-map.xml: $(EXECUTABLE)
 	@echo 'Invoking: Memory map generator'
-	actel-map -o "memory-map.xml" $(EXECUTABLES) $(BUILDCMD)
+	actel-map -o "memory-map.xml" $(EXECUTABLE) $(BUILDCMD)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-rfid_read.bin: $(EXECUTABLES)
-	@echo 'Invoking: GNU Binary Generator'
-	arm-none-eabi-objcopy -O binary $(EXECUTABLES) "rfid_read.bin"
-	@echo 'Finished building: $@'
-	@echo ' '
-
-rfid_read.hex: $(EXECUTABLES)
+rfid_read.hex: $(EXECUTABLE)
 	@echo 'Invoking: GNU Intel Hex File Generator'
-	arm-none-eabi-objcopy -O ihex $(EXECUTABLES) "rfid_read.hex"
+	arm-none-eabi-objcopy -O ihex $(EXECUTABLE) "rfid_read.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-rfid_read.srec: $(EXECUTABLES)
+rfid_read.srec: $(EXECUTABLE)
 	@echo 'Invoking: GNU S-Record Generator'
-	arm-none-eabi-objcopy -O srec $(EXECUTABLES) "rfid_read.srec"
+	arm-none-eabi-objcopy -O srec $(EXECUTABLE) "rfid_read.srec"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-rfid_read.lst: $(EXECUTABLES)
+rfid_read.lst: $(EXECUTABLE)
 	@echo 'Invoking: GNU Listing Generator'
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "rfid_read.lst"
+	arm-none-eabi-objdump -h -S $(EXECUTABLE) > "rfid_read.lst"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
-clean:
-	-$(RM) $(MEMORYMAP)$(OBJS)$(C_DEPS)$(SRECFILES)$(IHEXFILES)$(BINFILES)$(LISTINGS)$(EXECUTABLES) rfid_read
+clean::
+	-$(RM) $(MEMORYMAP)$(OBJS)$(C_DEPS)$(SRECFILES)$(IHEXFILES)$(LISTINGS)$(EXECUTABLE) rfid_read
 	-@echo ' '
 
-secondary-outputs: $(MEMORYMAP) $(BINFILES) $(IHEXFILES) $(SRECFILES) $(LISTINGS)
+secondary-outputs: $(MEMORYMAP) $(IHEXFILES) $(SRECFILES) $(LISTINGS)
 
 .PHONY: all clean dependents
 .SECONDARY:

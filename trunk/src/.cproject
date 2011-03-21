@@ -28,7 +28,7 @@
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug.521851278" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug">
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level.224545732" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.optimization.level" valueType="enumerated"/>
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1396492584" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
-<option id="gnu.c.compiler.option.include.paths.870769468" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+<option id="gnu.c.compiler.option.include.paths.870769468" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/include}&quot;"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.961809594" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
@@ -293,6 +293,7 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 <cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.1124236898">
 <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.1124236898" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -576,6 +577,7 @@
 </scannerConfigBuildInfo>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">

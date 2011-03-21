@@ -26,7 +26,7 @@
 <option id="gnu.c.compiler.option.preprocessor.def.symbols.1908580539" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
 <option id="gnu.c.compiler.option.preprocessor.undef.symbol.311994663" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol"/>
 <option id="gnu.c.compiler.option.include.paths.678846075" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-<listOptionValue builtIn="false" value="&quot;${workspace_loc:/rfid-fridge/src/include}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/include}&quot;"/>
 </option>
 <option id="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level.670422435" name="Optimization Level" superClass="gnu.c.compiler.cross.cortexm3.exe.debug.option.optimization.level"/>
 <option id="gnu.c.compiler.option.optimization.flags.1163248987" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags"/>
@@ -50,8 +50,12 @@
 <option id="gnu.c.link.option.nostdlibs.1014005028" name="No startup or default libs (-nostdlib)" superClass="gnu.c.link.option.nostdlibs"/>
 <option id="gnu.c.link.option.strip.1147754533" name="Omit all symbol information (-s)" superClass="gnu.c.link.option.strip"/>
 <option id="gnu.c.link.option.noshared.1631418428" name="No shared libraries (-static)" superClass="gnu.c.link.option.noshared"/>
-<option id="gnu.c.link.option.libs.461206288" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
-<option id="gnu.c.link.option.paths.632355850" name="Library search path (-L)" superClass="gnu.c.link.option.paths"/>
+<option id="gnu.c.link.option.libs.461206288" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+<listOptionValue builtIn="false" value="fridge"/>
+</option>
+<option id="gnu.c.link.option.paths.632355850" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/Debug}&quot;"/>
+</option>
 <option id="gnu.c.link.option.ldflags.1003192132" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-T../../../src/CMSIS/startup_gcc/debug-in-actel-smartfusion-esram.ld" valueType="string"/>
 <option id="gnu.c.link.option.other.378245602" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other"/>
 <option id="gnu.c.link.option.userobjs.1321205669" name="Other objects" superClass="gnu.c.link.option.userobjs"/>
@@ -69,9 +73,6 @@
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.733713855" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 <tool id="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.debug.429397607" name="Memory map generator" superClass="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.debug"/>
-<tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.debug.1124991689" name="GNU Binary Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.debug">
-<option id="gnu.objcopy.bin.option.flags.1494218638" name="Binary Generator Flags" superClass="gnu.objcopy.bin.option.flags"/>
-</tool>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.debug.366526267" name="GNU Intel Hex File Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.debug">
 <option id="gnu.objcopy.ihex.option.flags.1845440108" name="IHex Generator Flags" superClass="gnu.objcopy.ihex.option.flags"/>
 </tool>
@@ -367,6 +368,7 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 <cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024">
 <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.exe.release.393844024" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -405,7 +407,6 @@
 <inputType id="cdt.managedbuild.tool.gnu.assembler.input.116061819" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 </tool>
 <tool id="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.release.1384567658" name="Memory map generator" superClass="com.actel.softconsole.memory-map.gen.cross.cortexm3.xml.release"/>
-<tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.release.1661427295" name="GNU Binary Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.bin.release"/>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.release.677715685" name="GNU Intel Hex File Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.ihex.release"/>
 <tool id="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.srec.release.1980234900" name="GNU S-Record Generator" superClass="cdt.managedbuild.tool.gnu.objcopy.cross.cortexm3.srec.release"/>
 <tool id="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.release.387030192" name="GNU Listing Generator" superClass="cdt.managedbuild.tool.gnu.objdump.cross.cortexm3.lst.release"/>
@@ -695,6 +696,7 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">

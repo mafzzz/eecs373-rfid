@@ -21,7 +21,7 @@ void init_network();
 
 
 // switch from void to some type of error_t
-void send_request();
+void send_request(uint32_t barcode_val);
 
 // switch to certain data_t that will be received from server
 void receive_request();

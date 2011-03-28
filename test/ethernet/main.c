@@ -12,7 +12,10 @@
 
 int main()
 {
-
+	printf("Starting ethernet driver test project.");
 	init_network();
 
+	while(1) {}
+
+	return 0;
 }

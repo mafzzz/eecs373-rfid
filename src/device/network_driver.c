@@ -2,6 +2,7 @@
  * This file provides the implementation for the network driver functions.
  */
 #include <stdio.h>
+#include "driver/mss_ethernet_mac.h"
 
 void init_network()
 {

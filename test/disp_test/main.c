@@ -5,7 +5,7 @@
 #include "device/disp.h"
 #include <inttypes.h>
 
-int Cmain() {
+int main() {
 	/* Initialize UART */
 
 	disp_clear();

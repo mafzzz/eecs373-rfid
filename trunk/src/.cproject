@@ -22,7 +22,7 @@
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
 <configuration artifactExtension="a" artifactName="fridge" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1926841280" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug">
 <folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1926841280." name="/" resourcePath="">
-<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug.1247859665" name="Microsemi Cortex-M3 Tools" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug">
+<toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug.1247859665" name="Microsemi Cortex-M3 Tools" resourceTypeBasedDiscovery="true" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug">
 <targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug.2082998204" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug"/>
 <builder buildPath="${workspace_loc:/src/Debug}" id="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug.1610463395" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cross.cortexm3.lib.debug"/>
 <tool id="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug.521851278" name="GNU C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cross.cortexm3.lib.debug">
@@ -47,6 +47,7 @@
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 <storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 <storageModule moduleId="scannerConfiguration">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.arm.ActelARMManagedMakePerProjectProfile">
@@ -293,7 +294,6 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 <cconfiguration id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.1124236898">
 <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.release.1124236898" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -330,6 +330,8 @@
 </configuration>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 <storageModule moduleId="scannerConfiguration">
 <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 <profile id="com.actel.softconsole.arm.ActelARMManagedMakePerProjectProfile">
@@ -576,8 +578,6 @@
 </profile>
 </scannerConfigBuildInfo>
 </storageModule>
-<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
-<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">

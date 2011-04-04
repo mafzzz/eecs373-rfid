@@ -66,7 +66,7 @@ extern "C" {
 #endif
 
 
-#include "mpu_wrappers.h"
+#include "sys/mpu_wrappers.h"
 
 
 typedef void * xQueueHandle;

@@ -74,7 +74,23 @@ int disp_printf(const char * fmt, ...)
 
 void disp_move_cursor(uint8_t x, uint8_t y)
 {
+	disp_req_t req;
+	uint8_t cmd[3];
 
+	/* Move X coord */
+	cmd[0] = DISP_CMD_START;
+	cmd[1] = DISP_CMD_MOVEX;
+	cmd[2] = x;
+	req.data = cmd;
+	req.size = 3;
+	disp_req(&req);
+
+	cmd[0] = DISP_CMD_START;
+	cmd[1] = DISP_CMD_MOVEY;
+	cmd[2] = y;
+	req.data = cmd;
+	req.size = 3;
+	disp_req(&req);
 }
 
 void disp_invert()

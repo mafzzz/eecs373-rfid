@@ -18,7 +18,7 @@ extern "C" {
 #include "driver/mss_ethernet_mac.h"
 #include "driver/mss_ethernet_mac_regs.h"
 
-#include "drivers/phy.h"
+#include "driver/phy.h"
 
 extern MAC_instance_t g_mss_mac;
 

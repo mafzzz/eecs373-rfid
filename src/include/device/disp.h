@@ -32,6 +32,7 @@ int disp_init();
 void disp_clear();
 void disp_draw_pixel(uint8_t x, uint8_t y);
 void disp_set_pixel(uint8_t x, uint8_t y, uint8_t val);
+void disp_move_cursor(uint8_t x, uint8_t y);
 void disp_putc(const char c);
 int disp_printf(const char * fmt, ...);
 void disp_newline();

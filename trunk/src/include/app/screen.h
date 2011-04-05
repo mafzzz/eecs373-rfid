@@ -3,6 +3,7 @@
 
 #include <inttypes.h>
 
+
 typedef enum screen_mode_t {
 	SCREEN_MODE_IDLE = 0,
 	SCREEN_MODE_INVENTORY,
@@ -16,14 +17,6 @@ typedef struct {
 	uint32_t x;
 	uint32_t y;
 } screen_curs_t;
-
-void (*screen_funcs) (void) = {
-		screen_idle,
-		screen_inventory,
-		screen_nutrition,
-		screen_recipe
-};
-
 
 void screen_task();
 

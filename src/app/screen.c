@@ -14,12 +14,25 @@
 /* Current screen mode */
 screen_mode_t screen_current_mode;
 
+
+
 /* Screen cursors */
 screen_curs_t _screen_cursors[SCREEN_MODE_COUNT];
 #define SCREEN_CURSOR _screen_cursors[screen_current_mode]
 
-/* Prototypes */
-void screen_inventory(void);
+/* Screen mode functions */
+void screen_idle();
+void screen_inventory();
+void screen_nutrition();
+void screen_recipe();
+
+void (*screen_funcs[]) (void) = {
+		screen_idle,
+		screen_inventory,
+		screen_nutrition,
+		screen_recipe
+};
+
 
 /* Screen thread loop */
 void screen_task()
@@ -40,12 +53,12 @@ void screen_init()
 
 	/* Set up cursors for each mode */
 	for(i = 0; i < SCREEN_MODE_COUNT; i++) {
-		screen_curs[i].x = 0;
-		screen_curs[i].y = 0;
+		SCREEN_CURSOR.x = 0;
+		SCREEN_CURSOR.y = 0;
 	}
 
-	screen_current_mode = SCREEN_MODE_WELCOME;
-	screenRedraw();
+	screen_current_mode = SCREEN_MODE_IDLE;
+	screen_redraw();
 }
 
 void screen_mode(screen_mode_t new_mode)
@@ -71,13 +84,21 @@ void screen_idle()
 
 void screen_inventory()
 {
-	screen_curs_t *cursor = &screen_curs[SCREEN_MODE_INVENTORY];
 	product_t *cur_product;
 
 	list_for_each_entry(cur_product, &g_inventory_contents, product_t, inventory_list) {
 		disp_printf("%s ", cur_product->name);
-		cursor->y = 5;
+		SCREEN_CURSOR.y += 5;
 		//disp_move_cursor(cursor->x, cursor->y);
 	}
 }
 
+void screen_recipe()
+{
+
+}
+
+void screen_nutrition()
+{
+
+}

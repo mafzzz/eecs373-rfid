@@ -1,5 +1,5 @@
-#ifndef __DISP_H__
-#define __DISP_H__
+#ifndef DISP_H__
+#define DISP_H__
 #include "driver/core_uart_apb.h"
 #include "devices.h"
 

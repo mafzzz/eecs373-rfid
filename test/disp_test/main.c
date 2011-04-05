@@ -6,8 +6,8 @@
 #include <inttypes.h>
 
 int main() {
-	/* Initialize UART */
 
+	disp_init();
 	disp_clear();
 
 

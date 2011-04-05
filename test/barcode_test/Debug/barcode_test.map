@@ -1,0 +1,738 @@
+Archive member included because of file (symbol)
+
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+                              ./startup_a2fxxxm3.o (SystemInit)
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+                              ./main.o (MSS_GPIO_init)
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+                              ./main.o (UART_get_rx)
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+                              ./main.o (barcode_init)
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+                              C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o) (HAL_assert_fail)
+C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hw_reg_access.o)
+                              C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o) (HW_set_8bit_reg)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+                              ./newlib_stubs.o (abort)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                              ./startup_a2fxxxm3.o (__libc_init_array)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                              ./newlib_stubs.o (errno)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o) (raise)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o) (_getpid_r)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+                              ./newlib_stubs.o (write)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o) (_free_r)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o) (_impure_ptr)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o) (_malloc_r)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o) (__malloc_lock)
+c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                              c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o) (_sbrk_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_barcode_uart      0x8               ./main.o
+errno               0x4               c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+rx_size             0x1               ./main.o
+parsed_rx_data      0xb               ./main.o
+rx_data             0xd               ./main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+LOAD ./main.o
+LOAD ./newlib_stubs.o
+LOAD ./startup_a2fxxxm3.o
+LOAD C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a
+START GROUP
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+END GROUP
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+START GROUP
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a
+END GROUP
+                0x00000000                __DYNAMIC = 0x0
+                0x20000000                RAM_START_ADDRESS = 0x20000000
+                0x00010000                RAM_SIZE = 0x10000
+                0x00002000                MAIN_STACK_SIZE = 0x2000
+                0x00001000                PROCESS_STACK_SIZE = 0x1000
+                0x20010000                PROVIDE (__main_stack_start, (RAM_START_ADDRESS + RAM_SIZE))
+                0x2000e000                PROVIDE (__process_stack_start, (__main_stack_start - MAIN_STACK_SIZE))
+                0x20010000                PROVIDE (_estack, __main_stack_start)
+                0x00000000                PROVIDE (__mirrored_nvm, 0x0)
+
+.text           0x20000000     0x229c
+ CREATE_OBJECT_SYMBOLS
+                0x20000000                __text_load = LOADADDR (.text)
+                0x20000000                __text_start = .
+ *(.isr_vector)
+ .isr_vector    0x20000000      0x460 ./startup_a2fxxxm3.o
+                0x20000000                g_pfnVectors
+                0x20000298                Reset_Handler
+                0x200002f8                NMI_Handler
+                0x200002fa                HardFault_Handler
+                0x200002fc                MemManage_Handler
+                0x200002fe                BusFault_Handler
+                0x20000300                UsageFault_Handler
+                0x20000302                SVC_Handler
+                0x20000304                DebugMon_Handler
+                0x20000306                PendSV_Handler
+                0x20000308                SysTick_Handler
+                0x2000030a                WdogWakeup_IRQHandler
+                0x2000030c                BrownOut_1_5V_IRQHandler
+                0x2000030e                BrownOut_3_3V_IRQHandler
+                0x20000310                RTC_Match_IRQHandler
+                0x20000312                RTCIF_Pub_IRQHandler
+                0x20000314                EthernetMAC_IRQHandler
+                0x20000316                IAP_IRQHandler
+                0x20000318                ENVM0_IRQHandler
+                0x2000031a                ENVM1_IRQHandler
+                0x2000031c                DMA_IRQHandler
+                0x2000031e                UART0_IRQHandler
+                0x20000320                UART1_IRQHandler
+                0x20000322                SPI0_IRQHandler
+                0x20000324                SPI1_IRQHandler
+                0x20000326                I2C0_IRQHandler
+                0x20000328                I2C0_SMBAlert_IRQHandler
+                0x2000032a                I2C0_SMBus_IRQHandler
+                0x2000032c                I2C1_IRQHandler
+                0x2000032e                I2C1_SMBAlert_IRQHandler
+                0x20000330                I2C1_SMBus_IRQHandler
+                0x20000332                Timer1_IRQHandler
+                0x20000334                Timer2_IRQHandler
+                0x20000336                PLL_Lock_IRQHandler
+                0x20000338                PLL_LockLost_IRQHandler
+                0x2000033a                CommError_IRQHandler
+                0x2000033c                Fabric_IRQHandler
+                0x20000340                GPIO1_IRQHandler
+                0x20000342                GPIO2_IRQHandler
+                0x20000344                GPIO3_IRQHandler
+                0x20000346                GPIO4_IRQHandler
+                0x20000348                GPIO5_IRQHandler
+                0x2000034a                GPIO6_IRQHandler
+                0x2000034c                GPIO7_IRQHandler
+                0x2000034e                GPIO8_IRQHandler
+                0x20000350                GPIO9_IRQHandler
+                0x20000352                GPIO10_IRQHandler
+                0x20000354                GPIO11_IRQHandler
+                0x20000356                GPIO12_IRQHandler
+                0x20000358                GPIO13_IRQHandler
+                0x2000035a                GPIO14_IRQHandler
+                0x2000035c                GPIO15_IRQHandler
+                0x2000035e                GPIO16_IRQHandler
+                0x20000360                GPIO17_IRQHandler
+                0x20000362                GPIO18_IRQHandler
+                0x20000364                GPIO19_IRQHandler
+                0x20000366                GPIO20_IRQHandler
+                0x20000368                GPIO21_IRQHandler
+                0x2000036a                GPIO22_IRQHandler
+                0x2000036c                GPIO23_IRQHandler
+                0x2000036e                GPIO24_IRQHandler
+                0x20000370                GPIO25_IRQHandler
+                0x20000372                GPIO26_IRQHandler
+                0x20000374                GPIO27_IRQHandler
+                0x20000376                GPIO28_IRQHandler
+                0x20000378                GPIO29_IRQHandler
+                0x2000037a                GPIO30_IRQHandler
+                0x2000037c                GPIO31_IRQHandler
+                0x2000037e                ACE_PC0_Flag0_IRQHandler
+                0x20000380                ACE_PC0_Flag1_IRQHandler
+                0x20000382                ACE_PC0_Flag2_IRQHandler
+                0x20000384                ACE_PC0_Flag3_IRQHandler
+                0x20000386                ACE_PC1_Flag0_IRQHandler
+                0x20000388                ACE_PC1_Flag1_IRQHandler
+                0x2000038a                ACE_PC1_Flag2_IRQHandler
+                0x2000038c                ACE_PC1_Flag3_IRQHandler
+                0x2000038e                ACE_PC2_Flag0_IRQHandler
+                0x20000390                ACE_PC2_Flag1_IRQHandler
+                0x20000392                ACE_PC2_Flag2_IRQHandler
+                0x20000394                ACE_PC2_Flag3_IRQHandler
+                0x20000396                ACE_ADC0_DataValid_IRQHandler
+                0x20000398                ACE_ADC1_DataValid_IRQHandler
+                0x2000039a                ACE_ADC2_DataValid_IRQHandler
+                0x2000039c                ACE_ADC0_CalDone_IRQHandler
+                0x2000039e                ACE_ADC1_CalDone_IRQHandler
+                0x200003a0                ACE_ADC2_CalDone_IRQHandler
+                0x200003a2                ACE_ADC0_CalStart_IRQHandler
+                0x200003a4                ACE_ADC1_CalStart_IRQHandler
+                0x200003a6                ACE_ADC2_CalStart_IRQHandler
+                0x200003a8                ACE_Comp0_Fall_IRQHandler
+                0x200003aa                ACE_Comp1_Fall_IRQHandler
+                0x200003ac                ACE_Comp2_Fall_IRQHandler
+                0x200003ae                ACE_Comp3_Fall_IRQHandler
+                0x200003b0                ACE_Comp4_Fall_IRQHandler
+                0x200003b2                ACE_Comp5_Fall_IRQHandler
+                0x200003b4                ACE_Comp6_Fall_IRQHandler
+                0x200003b6                ACE_Comp7_Fall_IRQHandler
+                0x200003b8                ACE_Comp8_Fall_IRQHandler
+                0x200003ba                ACE_Comp9_Fall_IRQHandler
+                0x200003bc                ACE_Comp10_Fall_IRQHandler
+                0x200003be                ACE_Comp11_Fall_IRQHandler
+                0x200003c0                ACE_Comp0_Rise_IRQHandler
+                0x200003c2                ACE_Comp1_Rise_IRQHandler
+                0x200003c4                ACE_Comp2_Rise_IRQHandler
+                0x200003c6                ACE_Comp3_Rise_IRQHandler
+                0x200003c8                ACE_Comp4_Rise_IRQHandler
+                0x200003ca                ACE_Comp5_Rise_IRQHandler
+                0x200003cc                ACE_Comp6_Rise_IRQHandler
+                0x200003ce                ACE_Comp7_Rise_IRQHandler
+                0x200003d0                ACE_Comp8_Rise_IRQHandler
+                0x200003d2                ACE_Comp9_Rise_IRQHandler
+                0x200003d4                ACE_Comp10_Rise_IRQHandler
+                0x200003d6                ACE_Comp11_Rise_IRQHandler
+                0x200003d8                ACE_ADC0_FifoFull_IRQHandler
+                0x200003da                ACE_ADC0_FifoAFull_IRQHandler
+                0x200003dc                ACE_ADC0_FifoEmpty_IRQHandler
+                0x200003de                ACE_ADC1_FifoFull_IRQHandler
+                0x200003e0                ACE_ADC1_FifoAFull_IRQHandler
+                0x200003e2                ACE_ADC1_FifoEmpty_IRQHandler
+                0x200003e4                ACE_ADC2_FifoFull_IRQHandler
+                0x200003e6                ACE_ADC2_FifoAFull_IRQHandler
+                0x200003e8                ACE_ADC2_FifoEmpty_IRQHandler
+                0x200003ea                ACE_PPE_Flag0_IRQHandler
+                0x200003ec                ACE_PPE_Flag1_IRQHandler
+                0x200003ee                ACE_PPE_Flag2_IRQHandler
+                0x200003f0                ACE_PPE_Flag3_IRQHandler
+                0x200003f2                ACE_PPE_Flag4_IRQHandler
+                0x200003f4                ACE_PPE_Flag5_IRQHandler
+                0x200003f6                ACE_PPE_Flag6_IRQHandler
+                0x200003f8                ACE_PPE_Flag7_IRQHandler
+                0x200003fa                ACE_PPE_Flag8_IRQHandler
+                0x200003fc                ACE_PPE_Flag9_IRQHandler
+                0x200003fe                ACE_PPE_Flag10_IRQHandler
+                0x20000400                ACE_PPE_Flag11_IRQHandler
+                0x20000402                ACE_PPE_Flag12_IRQHandler
+                0x20000404                ACE_PPE_Flag13_IRQHandler
+                0x20000406                ACE_PPE_Flag14_IRQHandler
+                0x20000408                ACE_PPE_Flag15_IRQHandler
+                0x2000040a                ACE_PPE_Flag16_IRQHandler
+                0x2000040c                ACE_PPE_Flag17_IRQHandler
+                0x2000040e                ACE_PPE_Flag18_IRQHandler
+                0x20000410                ACE_PPE_Flag19_IRQHandler
+                0x20000412                ACE_PPE_Flag20_IRQHandler
+                0x20000414                ACE_PPE_Flag21_IRQHandler
+                0x20000416                ACE_PPE_Flag22_IRQHandler
+                0x20000418                ACE_PPE_Flag23_IRQHandler
+                0x2000041a                ACE_PPE_Flag24_IRQHandler
+                0x2000041c                ACE_PPE_Flag25_IRQHandler
+                0x2000041e                ACE_PPE_Flag26_IRQHandler
+                0x20000420                ACE_PPE_Flag27_IRQHandler
+                0x20000422                ACE_PPE_Flag28_IRQHandler
+                0x20000424                ACE_PPE_Flag29_IRQHandler
+                0x20000426                ACE_PPE_Flag30_IRQHandler
+                0x20000428                ACE_PPE_Flag31_IRQHandler
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x20000460        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .text          0x20000460       0x30 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text          0x20000490      0x154 ./main.o
+                0x20000520                GPIO0_IRQHandler
+                0x200005b4                main
+ .text          0x200005e4      0x298 ./newlib_stubs.o
+                0x200005e4                _close
+                0x200005fc                _execve
+                0x20000628                _exit
+                0x20000634                _fork
+                0x20000654                _fstat
+                0x20000678                _getpid
+                0x20000688                _isatty
+                0x200006a0                _kill
+                0x200006c8                _link
+                0x200006f0                _lseek
+                0x2000070c                _open
+                0x20000728                _read
+                0x20000744                _sbrk
+                0x200007d0                _stat
+                0x200007f4                _times
+                0x2000080c                _unlink
+                0x20000834                _wait
+                0x2000085c                _write_r
+ .text          0x2000087c        0x0 ./startup_a2fxxxm3.o
+ .text          0x2000087c      0x210 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+                0x2000087c                SystemInit
+                0x20000888                SystemCoreClockUpdate
+ .text          0x20000a8c      0x388 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+                0x20000b00                MSS_GPIO_init
+                0x20000b6c                MSS_GPIO_config
+                0x20000ba8                MSS_GPIO_set_output
+                0x20000be8                MSS_GPIO_drive_inout
+                0x20000d10                MSS_GPIO_enable_irq
+                0x20000d74                MSS_GPIO_disable_irq
+                0x20000dc4                MSS_GPIO_clear_irq
+ .text          0x20000e14      0x73c C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+                0x20000e14                UART_init
+                0x20001044                UART_send
+                0x20001158                UART_fill_tx_fifo
+                0x20001290                UART_get_rx
+                0x20001400                UART_polled_tx_string
+                0x200014dc                UART_get_rx_status
+ .text          0x20001550       0x24 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+                0x20001550                barcode_init
+ .text          0x20001574       0x28 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+                0x20001574                HAL_assert_fail
+ .text          0x2000159c       0x90 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hw_reg_access.o)
+                0x2000159c                HW_set_32bit_reg
+                0x200015a0                HW_get_32bit_reg
+                0x200015a4                HW_set_32bit_reg_field
+                0x200015c0                HW_get_32bit_reg_field
+                0x200015cc                HW_set_16bit_reg
+                0x200015d0                HW_get_16bit_reg
+                0x200015d4                HW_set_16bit_reg_field
+                0x200015f0                HW_get_16bit_reg_field
+                0x200015fc                HW_set_8bit_reg
+                0x20001600                HW_get_8bit_reg
+                0x20001604                HW_set_8bit_reg_field
+                0x20001620                HW_get_8bit_reg_field
+ .text          0x2000162c       0x10 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+                0x2000162c                abort
+ .text          0x2000163c       0x50 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x2000163c                __libc_init_array
+ .text          0x2000168c      0x10c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x2000168c                _wrapup_reent
+                0x200016c4                cleanup_glue
+                0x200016e0                _reclaim_reent
+ .text          0x20001798      0x14c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+                0x20001798                _raise_r
+                0x200017f0                raise
+                0x20001800                _init_signal_r
+                0x20001828                _init_signal
+                0x20001834                __sigtramp_r
+                0x20001888                __sigtramp
+                0x20001898                _signal_r
+                0x200018d4                signal
+ .text          0x200018e4       0x30 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+                0x200018e4                _getpid_r
+                0x200018e8                _kill_r
+ .text          0x20001914       0x1c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+                0x20001914                write
+ .text          0x20001930      0x268 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x20001930                _malloc_trim_r
+                0x200019d8                _free_r
+ .text          0x20001b98        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .text          0x20001b98      0x5a4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20001b98                _malloc_r
+ .text          0x2000213c        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x2000213c                __malloc_lock
+                0x20002140                __malloc_unlock
+ .text          0x20002144       0x28 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x20002144                _sbrk_r
+ .text          0x2000216c        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .text          0x2000216c        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+                0x2000216c                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x2000216c       0x1c ./newlib_stubs.o
+ .rodata        0x20002188       0x10 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .rodata        0x20002198       0xc0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .rodata        0x20002258       0x1c C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .rodata        0x20002274        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20002274                _global_impure_ptr
+ .rodata.str1.4
+                0x20002278        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *(.init)
+ .init          0x2000227c        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000227c                _init
+ .init          0x20002280        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ *(.fini)
+ .fini          0x20002288        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20002288                _fini
+ .fini          0x2000228c        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20002294                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x20002294                PROVIDE (__preinit_array_end, .)
+                0x20002294                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x20002294        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20002298                PROVIDE (__init_array_end, .)
+                0x20002298                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ .fini_array    0x20002298        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x2000229c                PROVIDE (__fini_array_end, .)
+                0x2000229c                __exidx_start = .
+
+.v4_bx          0x2000229c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x2000229c                __exidx_end = .
+                0x2000229c                _etext = .
+                0x2000229c                PROVIDE (__text_end, .)
+
+.data           0x2000229c      0x528
+                0x2000229c                __data_load = LOADADDR (.data)
+                0x2000229c                _sidata = LOADADDR (.data)
+                0x2000229c                __data_start = .
+                0x2000229c                _sdata = .
+ *(.jcr)
+ .jcr           0x2000229c        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x2000229c        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200022a0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .data          0x200022a0        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x200022a0                __dso_handle
+ .data          0x200022a4        0x0 ./main.o
+ .data          0x200022a4        0x4 ./newlib_stubs.o
+                0x200022a4                environ
+ .data          0x200022a8        0x0 ./startup_a2fxxxm3.o
+ .data          0x200022a8       0x18 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+                0x200022a8                SystemFrequency
+                0x200022ac                SystemCoreClock
+                0x200022b0                g_FrequencyPCLK0
+                0x200022b4                g_FrequencyPCLK1
+                0x200022b8                g_FrequencyACE
+                0x200022bc                g_FrequencyFPGA
+ .data          0x200022c0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .data          0x200022c0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .data          0x200022c0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .data          0x200022c0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+ .data          0x200022c0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hw_reg_access.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+ .data          0x200022c0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .data          0x200022c0       0xf4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x200022c0                _impure_ptr
+ .data          0x200023b4      0x410 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x200023b4                __malloc_av_
+                0x200027bc                __malloc_sbrk_base
+                0x200027c0                __malloc_trim_threshold
+ .data          0x200027c4        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .data          0x200027c4        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+ .data          0x200027c4        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .data          0x200027c4        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x200027c4                . = ALIGN (0x4)
+                0x200027c4                _edata = .
+
+.bss            0x200027c4       0x6c
+                0x200027c4                __bss_start__ = .
+                0x200027c4                _sbss = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x200027c4        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .bss           0x200027c4        0x1 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x200027c5        0x0 ./main.o
+ *fill*         0x200027c5        0x3 00
+ .bss           0x200027c8        0x8 ./newlib_stubs.o
+                0x200027c8                __env
+ .bss           0x200027d0        0x0 ./startup_a2fxxxm3.o
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+ .bss           0x200027d0        0x0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hw_reg_access.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .bss           0x200027d0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .bss           0x200027d0       0x34 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x200027d0                __malloc_top_pad
+                0x200027d4                __malloc_current_mallinfo
+                0x200027fc                __malloc_max_sbrked_mem
+                0x20002800                __malloc_max_total_mem
+ .bss           0x20002804        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .bss           0x20002804        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+ .bss           0x20002804        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .bss           0x20002804        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ *(COMMON)
+ COMMON         0x20002804       0x25 ./main.o
+                0x20002804                g_barcode_uart
+                0x2000280c                rx_size
+                0x20002810                parsed_rx_data
+                0x2000281c                rx_data
+ *fill*         0x20002829        0x3 00
+ COMMON         0x2000282c        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x2000282c                errno
+                0x20002830                . = ALIGN (0x8)
+                0x20002830                __bss_end__ = .
+                0x20002830                _end = .
+                0x20002830                __end = _end
+                0x20002830                _ebss = .
+                0x20002830                PROVIDE (end, .)
+
+.stack          0x20002830     0x3000
+                0x20002830                . = ALIGN (0x4)
+                0x20003830                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20002830     0x1000 00
+                0x20003830                . = ALIGN (0x4)
+                0x20005830                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20003830     0x2000 00
+                0x20005830                . = ALIGN (0x4)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.comment        0x00000000      0x12d
+ .comment       0x00000000       0x2b ./main.o
+ .comment       0x0000002b       0x2b ./newlib_stubs.o
+ .comment       0x00000056       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .comment       0x00000081       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .comment       0x000000ac       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .comment       0x000000d7       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .comment       0x00000102       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_aranges  0x00000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 ./main.o
+ .debug_aranges
+                0x00000020       0x20 ./newlib_stubs.o
+ .debug_aranges
+                0x00000040       0x20 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_aranges
+                0x00000060       0x20 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_aranges
+                0x00000080       0x20 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_aranges
+                0x000000a0       0x20 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_aranges
+                0x000000c0       0x20 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_pubnames
+                0x00000000      0x39f
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x6e ./main.o
+ .debug_pubnames
+                0x0000006e       0xeb ./newlib_stubs.o
+ .debug_pubnames
+                0x00000159       0xb4 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_pubnames
+                0x0000020d       0xb1 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_pubnames
+                0x000002be       0x85 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_pubnames
+                0x00000343       0x36 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_pubnames
+                0x00000379       0x26 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_info     0x00000000     0x2cc7
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x888 ./main.o
+ .debug_info    0x00000888      0x6c8 ./newlib_stubs.o
+ .debug_info    0x00000f50      0x500 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_info    0x00001450     0x1110 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_info    0x00002560      0x557 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_info    0x00002ab7       0xe6 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_info    0x00002b9d      0x12a C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_abbrev   0x00000000      0x755
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x16b ./main.o
+ .debug_abbrev  0x0000016b      0x12e ./newlib_stubs.o
+ .debug_abbrev  0x00000299      0x10f C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_abbrev  0x000003a8      0x17f C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_abbrev  0x00000527      0x11e C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_abbrev  0x00000645       0x82 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_abbrev  0x000006c7       0x8e C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_line     0x00000000     0x140d
+ *(.debug_line)
+ .debug_line    0x00000000      0x36c ./main.o
+ .debug_line    0x0000036c      0x35a ./newlib_stubs.o
+ .debug_line    0x000006c6      0x2af C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_line    0x00000975      0x38d C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_line    0x00000d02      0x203 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_line    0x00000f05      0x3f9 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_line    0x000012fe      0x10f C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_frame    0x00000000      0x80c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 ./main.o
+ .debug_frame   0x000000a0      0x204 ./newlib_stubs.o
+ .debug_frame   0x000002a4       0x64 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000308      0x118 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_frame   0x00000420       0xd0 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_frame   0x000004f0       0x2c C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_frame   0x0000051c       0x2c C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+ .debug_frame   0x00000548       0x28 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+ .debug_frame   0x00000570       0x2c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x0000059c       0x64 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .debug_frame   0x00000600       0xc0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+ .debug_frame   0x000006c0       0x3c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+ .debug_frame   0x000006fc       0x28 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+ .debug_frame   0x00000724       0x50 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .debug_frame   0x00000774       0x3c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x000007b0       0x30 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .debug_frame   0x000007e0       0x2c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+
+.debug_str      0x00000000     0x17bf
+ *(.debug_str)
+ .debug_str     0x00000000      0xdf3 ./main.o
+                                0xe42 (size before relaxing)
+ .debug_str     0x00000df3      0x1de ./newlib_stubs.o
+                                0x30a (size before relaxing)
+ .debug_str     0x00000fd1      0x368 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+                                0x42a (size before relaxing)
+ .debug_str     0x00001339      0x2d6 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+                               0x1268 (size before relaxing)
+ .debug_str     0x0000160f      0x138 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+                                0x253 (size before relaxing)
+ .debug_str     0x00001747       0x21 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+                                0x140 (size before relaxing)
+ .debug_str     0x00001768       0x57 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+                                0x155 (size before relaxing)
+
+.debug_loc      0x00000000      0x8ff
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xfb ./main.o
+ .debug_loc     0x000000fb      0x3c6 ./newlib_stubs.o
+ .debug_loc     0x000004c1       0x99 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_loc     0x0000055a      0x1ef C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_loc     0x00000749      0x154 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_loc     0x0000089d       0x2b C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_loc     0x000008c8       0x37 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_macinfo  0x00000000    0x1f375
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000     0x6d43 ./main.o
+ .debug_macinfo
+                0x00006d43     0x4bf8 ./newlib_stubs.o
+ .debug_macinfo
+                0x0000b93b     0x59e6 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .debug_macinfo
+                0x00011321     0x5ce1 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .debug_macinfo
+                0x00017002     0x2437 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .debug_macinfo
+                0x00019439     0x425a C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .debug_macinfo
+                0x0001d693     0x1ce2 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x25
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x19 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x31 ./main.o
+ .ARM.attributes
+                0x00000073       0x31 ./newlib_stubs.o
+ .ARM.attributes
+                0x000000a4       0x21 ./startup_a2fxxxm3.o
+ .ARM.attributes
+                0x000000c5       0x31 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(system_a2fxxxm3.o)
+ .ARM.attributes
+                0x000000f6       0x31 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(mss_gpio.o)
+ .ARM.attributes
+                0x00000127       0x31 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(core_uart_apb.o)
+ .ARM.attributes
+                0x00000158       0x31 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(barcode.o)
+ .ARM.attributes
+                0x00000189       0x31 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hal_assert.o)
+ .ARM.attributes
+                0x000001ba       0x21 C:\Users\mladmon\Documents\EECS 373\rfid project\eecs373-rfid\src\Debug\libfridge.a(hw_reg_access.o)
+ .ARM.attributes
+                0x000001db       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-abort.o)
+ .ARM.attributes
+                0x00000204       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000022d       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000256       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signal.o)
+ .ARM.attributes
+                0x0000027f       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-signalr.o)
+ .ARM.attributes
+                0x000002a8       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-syswrite.o)
+ .ARM.attributes
+                0x000002d1       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000002fa       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000323       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x0000034c       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000375       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000039e       0x29 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .ARM.attributes
+                0x000003c7       0x19 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.isr_vector)
+OUTPUT(barcode_test elf32-littlearm)

@@ -14,11 +14,19 @@
 /* Current screen mode */
 screen_mode_t screen_current_mode;
 
+/* Status indicator */
+char status_text[20];
 
 
 /* Screen cursors */
 screen_curs_t _screen_cursors[SCREEN_MODE_COUNT];
 #define SCREEN_CURSOR _screen_cursors[screen_current_mode]
+
+#define SCREEN_CURSOR_X			(SCREEN_CURSOR.x / 6)
+#define SCREEN_CURSOR_Y			((SCREEN_TOP - SCREEN_CURSOR)/8)
+#define SCREEN_CURSOR_SET(X,Y) {SCREEN_CURSOR.x = X*6; SCREEN_CURSOR.y = SCREEN_TOP - Y*8; );
+#define SCREEN_CURSOR_UPDATE() disp_move_cursor(SCREEN_CURSOR.x, SCREEN_CURSOR.y)
+
 
 /* Screen mode functions */
 void screen_idle();
@@ -37,10 +45,14 @@ void (*screen_funcs[]) (void) = {
 /* Screen thread loop */
 void screen_task()
 {
+	// Move from startup to idle mode
+	screen_current_mode = SCREEN_MODE_IDLE;
+	screen_redraw();
 	for(;;) {
-		int screen_changed = 0;
+		int screen_changed = 1;
 		// TODO: Check for input from keypad
 		// Redraw the screen based on current mode if it needs redraw
+
 
 	}
 }
@@ -54,10 +66,12 @@ void screen_init()
 	/* Set up cursors for each mode */
 	for(i = 0; i < SCREEN_MODE_COUNT; i++) {
 		SCREEN_CURSOR.x = 0;
-		SCREEN_CURSOR.y = 0;
+		SCREEN_CURSOR.y = SCREEN_TOP;
 	}
 
-	screen_current_mode = SCREEN_MODE_IDLE;
+	status_text[0] = '\0';
+
+	screen_current_mode = SCREEN_MODE_STARTUP;
 	screen_redraw();
 }
 
@@ -72,33 +86,37 @@ void screen_redraw()
 	/* Clear the display */
 	disp_clear();
 
+	/* Draw the status text */
+
+	disp_move_cursor(SCREEN_LEFT, SCREEN_TOP);
+	disp_printf("Status: %s", status_text);
+	SCREEN_CURSOR_UPDATE();
+
 	/* Based on the current mode, call the appropriate function	*/
 	screen_funcs[screen_current_mode]();
 }
 
 /* SCREEN MODE FUNCTIONALITY */
+void screen_startup()
+{
+	disp_printf("Startup mode");
+}
 void screen_idle()
 {
-
+	disp_printf("Idle mode");
 }
 
 void screen_inventory()
 {
-	product_t *cur_product;
-
-	list_for_each_entry(cur_product, &g_inventory_contents, product_t, inventory_list) {
-		disp_printf("%s ", cur_product->name);
-		SCREEN_CURSOR.y += 5;
-		//disp_move_cursor(cursor->x, cursor->y);
-	}
+	disp_printf("Inventory mode");
 }
 
 void screen_recipe()
 {
-
+	disp_printf("Recipe mode");
 }
 
 void screen_nutrition()
 {
-
+	disp_printf("Nutrition mode");
 }

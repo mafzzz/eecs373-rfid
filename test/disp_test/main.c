@@ -6,7 +6,7 @@
 #include <inttypes.h>
 
 int main() {
-
+	disp_init();
 	disp_init();
 	disp_clear();
 
@@ -14,10 +14,10 @@ int main() {
 	while(1) {
 		int i,j;
 		for(i = 0; i < 100; i++) {
-			for(j = 0; j < 50000; j++) {
+			for(j = 0; j < 5000000; j++) {
 				/* Wait */
 			}
-			disp_printf("%s", "This is a test");
+			disp_printf("%s", "TEST ");
 		}
 
 	}

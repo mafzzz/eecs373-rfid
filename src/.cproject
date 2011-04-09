@@ -20,7 +20,7 @@
 </extensions>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<configuration artifactExtension="a" artifactName="fridge" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1926841280" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug">
+<configuration artifactExtension="a" artifactName="fridge" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1926841280" name="Debug" parent="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug" prebuildStep="del &quot;libfridge.a&quot;">
 <folderInfo id="cdt.managedbuild.config.gnu.cross.cortexm3.lib.debug.1926841280." name="/" resourcePath="">
 <toolChain id="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug.1247859665" name="Microsemi Cortex-M3 Tools" resourceTypeBasedDiscovery="true" superClass="cdt.managedbuild.toolchain.gnu.cross.cortexm3.lib.debug">
 <targetPlatform id="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug.2082998204" name="%PlatformName.Dbg" superClass="cdt.managedbuild.target.gnu.platform.cross.cortexm3.lib.debug"/>
@@ -30,6 +30,9 @@
 <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level.1396492584" name="Debug Level" superClass="gnu.c.compiler.cross.cortexm3.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 <option id="gnu.c.compiler.option.include.paths.870769468" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/include}&quot;"/>
+</option>
+<option id="gnu.c.compiler.option.preprocessor.def.symbols.312236104" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="ACTEL_STDIO_THRU_UART"/>
 </option>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.961809594" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>

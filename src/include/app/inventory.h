@@ -13,7 +13,9 @@
 /* Defined in inventory.c */
 extern struct list_head g_inventory_contents;
 
-void inventory_add(product_t *product);
-int inventory_set_presence(uint32_t upc, int presence);
+void inventory_all_add(product_t *product);
+void inventory_stocked_toggle(product_t *product);
+product_t * inventory_all_lookup(uint32_t rfid_id);
+product_t * inventory_stocked_lookup(uint32_t rfid_id);
 
 #endif /* _INVENTORY_H */

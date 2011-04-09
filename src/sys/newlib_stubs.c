@@ -23,7 +23,7 @@ extern int errno;
  * specifying the baud rate using the ACTEL_STDIO_BAUD_RATE define.
  */
 #ifdef ACTEL_STDIO_THRU_UART
-#include "../../drivers/mss_uart/mss_uart.h"
+#include "driver/mss_uart.h"
 
 #ifndef ACTEL_STDIO_BAUD_RATE
 #define ACTEL_STDIO_BAUD_RATE  MSS_UART_57600_BAUD

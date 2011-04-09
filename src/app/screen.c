@@ -10,6 +10,10 @@
 #include "app/screen.h"
 #include "app/product.h"
 #include "app/inventory.h"
+#include "app/app.h"
+
+#include "sys/FreeRTOS.h"
+#include "sys/queue.h"
 
 /* Current screen mode */
 screen_mode_t screen_current_mode;
@@ -52,7 +56,10 @@ void screen_task()
 		int screen_changed = 1;
 		// TODO: Check for input from keypad
 		// Redraw the screen based on current mode if it needs redraw
-
+		if(xQueueReceive(g_screen_status_queue, &status_text, 0)) {
+			//Status changed, redraw
+			screen_redraw();
+		}
 
 	}
 }

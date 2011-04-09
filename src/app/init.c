@@ -43,7 +43,7 @@ const char* sensors_task_name = "SENSORSTASK";
 const char* control_task_name = "CONTROLTASK";
 
 
-int init()
+int main()
 {
 	printf("Init starting\n");
 	/* TODO Configure hardware */

@@ -21,7 +21,7 @@
 extern "C" {
 #endif 
 
-#include "../../CMSIS/a2fxxxm3.h"
+#include "sys/a2fxxxm3.h"
 #include "mss_ethernet_mac.h"
 #include "mss_ethernet_mac_user_cfg.h"
   

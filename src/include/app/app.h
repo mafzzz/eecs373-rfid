@@ -4,6 +4,8 @@
  *  Created on: Apr 9, 2011
  *      Author: Zach
  */
+#include "sys/FreeRTOS.h"
+#include "sys/queue.h"
 
 #ifndef APP_H_
 #define APP_H_

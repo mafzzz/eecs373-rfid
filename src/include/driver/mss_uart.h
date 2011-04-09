@@ -157,7 +157,7 @@
 #ifndef __MSS_UART_H_
 #define __MSS_UART_H_ 1
 
-#include "../../CMSIS/a2fxxxm3.h"
+#include "sys/a2fxxxm3.h"
 #include <stddef.h>
 
 #ifdef __cplusplus

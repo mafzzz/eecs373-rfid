@@ -8,7 +8,7 @@
  * SVN $Date: 2011-03-01 10:17:10 +0530 (Tue, 01 Mar 2011) $
  */
 #include "driver/mss_uart.h"
-#include "../CMSIS/mss_assert.h"
+#include "sys/mss_assert.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -6,8 +6,8 @@
  */
 #include "driver/mss_ace.h"
 #include "driver/mss_ace_configurator.h"
-#include "../CMSIS/a2fxxxm3.h"
-#include "../CMSIS/mss_assert.h"
+#include "sys/a2fxxxm3.h"
+#include "sys/mss_assert.h"
 #include "driver/ace_handles.h"
 #include "driver/ace_config.h"
 #include <string.h>

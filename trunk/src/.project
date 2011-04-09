@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>src</name>
+	<name>full_app</name>
 	<comment></comment>
 	<projects>
+		<project>src</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -30,7 +31,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${workspace_loc:/src/Debug}</value>
+					<value>${workspace_loc:/full_app/Debug}</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>

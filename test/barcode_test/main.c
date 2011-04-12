@@ -10,7 +10,7 @@ uint8_t rx_data[MAX_RX_DATA_SIZE];
 char parsed_rx_data[PARSED_RX_DATA_SIZE];
 uint8_t rx_size;
 
-__attribute__ ((interrupt)) void GPIO0_IRQHandler(void)
+__attribute__ ((interrupt)) void Barcode_Handler(void)
 {
 	/* RXRDY is high when data is available in the receive data buffer/FIFO.
 	   This bit is cleared by reading the Receive Data Register.	 */

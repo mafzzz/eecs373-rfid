@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+#include "sys/FreeRTOS.h"
+#include "sys/task.h"
+
 #define MAX_CMD_SIZE 10
 
 void disp_req(disp_req_t *req);
@@ -62,6 +65,10 @@ int disp_printf(const char * fmt, ...)
 	va_start(args, fmt);
 	count = vsnprintf(buf, DISP_MAX_STRLEN, fmt, args);
 
+	if(count == 0) {
+		return 0;
+	}
+
 	/* Create request */
 	disp_req_t req;
 	req.data = (uint8_t *)&buf[0];
@@ -90,6 +97,41 @@ void disp_move_cursor(uint8_t x, uint8_t y)
 	cmd[2] = y;
 	req.data = cmd;
 	req.size = 3;
+	disp_req(&req);
+}
+
+void disp_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2)
+{
+	disp_req_t req;
+	uint8_t cmd[7];
+
+	/* Move X coord */
+	cmd[0] = DISP_CMD_START;
+	cmd[1] = DISP_CMD_LINE;
+	cmd[2] = x1;
+	cmd[3] = y1;
+	cmd[4] = x2;
+	cmd[5] = y2;
+	cmd[6] = 1; //Draw, not erase
+	req.data = cmd;
+	req.size = 7;
+	disp_req(&req);
+}
+
+void disp_clear_rect(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2)
+{
+	disp_req_t req;
+	uint8_t cmd[6];
+
+	/* Move X coord */
+	cmd[0] = DISP_CMD_START;
+	cmd[1] = DISP_CMD_CLEAR_RECT;
+	cmd[2] = x1;
+	cmd[3] = y1;
+	cmd[4] = x2;
+	cmd[5] = y2;
+	req.data = cmd;
+	req.size = 6;
 	disp_req(&req);
 }
 
@@ -133,5 +175,7 @@ void disp_set_backlight(int level)
 
 void disp_req(disp_req_t *req)
 {
+	vTaskSuspendAll();
 	UART_send(&g_disp_uart, req->data, req->size);
+	xTaskResumeAll();
 }

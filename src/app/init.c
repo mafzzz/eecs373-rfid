@@ -8,11 +8,16 @@
 /* System */
 #include "sys/defs.h"
 
+/* Device */
+#include "device/barcode.h"
+#include "device/rfid.h"
+
 /* Application */
 #include "app/app.h"
 #include "app/sensors.h"
 #include "app/screen.h"
 #include "app/control.h"
+
 
 /* Device wakeup semaphores */
 xSemaphoreHandle barcode_sem;
@@ -45,7 +50,8 @@ const char* control_task_name = "CONTROLTASK";
 
 int main()
 {
-	printf("Init starting\n");
+	int a;
+	printf("Init starting\r\n");
 	/* TODO Configure hardware */
 
 	/* Create device wakeup semaphores */
@@ -53,19 +59,30 @@ int main()
 	vSemaphoreCreateBinary(rfid_sem);
 
 	/* Create the tasks */
+	printf("Creating tasks\r\n");
 	xTaskCreate( screen_task,  (signed portCHAR * )screen_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &screen_task_handle );
 	//xTaskCreate( sensors_task,  (signed portCHAR * )sensors_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &sensors_task_handle );
-	xTaskCreate( control_task,  (signed portCHAR * )control_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &control_task_handle );
+	//xTaskCreate( control_task,  (signed portCHAR * )control_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &control_task_handle );
+	xTaskCreate( barcode_task,  (signed portCHAR * )barcode_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &barcode_task_handle );
+	xTaskCreate( rfid_task,  (signed portCHAR * )rfid_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &rfid_task_handle );
+
 
 	/* Create the queues */
+	printf("Creating Queues\r\n");
 	g_rfid_queue = xQueueCreate(10, sizeof(uint32_t));
-	g_barcode_queue = xQueueCreate(10, sizeof(char) * 9);
+	g_barcode_queue = xQueueCreate(10, sizeof(char) * 11);
 	g_sensors_queue = xQueueCreate(10, sizeof(uint32_t));
 	g_keypad_queue = xQueueCreate(10, sizeof(uint32_t));
+	g_screen_status_queue = xQueueCreate(10, sizeof(char) * 20);
 
+	/* Initialize devices */
 	screen_init();
+	temp_init();
+	barcode_init();
+	rfid_init();
 
 	/* Start the scheduler, this should never return */
+	printf("Starting scheduler\r\n");
  	vTaskStartScheduler();
 
 	/* Scheduler failed to start (died), the world is ending */

@@ -22,14 +22,15 @@ static int state, next_state;
 
 void control_task()
 {
-	int count = 0;
-	char status_test[20];
 	for(;;) {
+
+		printf("CONTROL: Start loop\r\n");
+
 		// Queue message counts
-		int rfid_num_messages,
-			barcode_num_messages,
-			sensors_num_messages,
-			keypad_num_messages;
+		uint32_t rfid_num_messages = 0;
+		uint32_t barcode_num_messages = 0;
+		uint32_t sensors_num_messages = 0;
+		uint32_t keypad_num_messages = 0;
 
 		int rfid_message;
 		char * barcode_message;
@@ -39,21 +40,32 @@ void control_task()
 		sensors_num_messages = uxQueueMessagesWaiting(g_sensors_queue);
 		keypad_num_messages = uxQueueMessagesWaiting(g_keypad_queue);
 
+
+		printf(" CONTROL: rfid messages: %d\n\r", rfid_num_messages);
+		printf(" CONTROL: barcode messages: %d\n\r", barcode_num_messages);
+		printf(" CONTROL: sensors messages: %d\n\r", sensors_num_messages);
+		printf(" CONTROL: keypad messages: %d\n\r", keypad_num_messages);
+
+		//printf("CONTROL: barcode messages: %u\r\n", barcode_num_messages);
+		//printf("CONTROL: sensor messages: %u\r\n", sensors_num_messages);
+		//printf("CONTROL: keypad messages: %u\r\n", keypad_num_messages);
+
 		//Status test to screen
-		sprintf(&status_test[0], "Status Test: %i", count);
-		xQueueSend(g_screen_status_queue, &status_test, 0);
 
 		/* Control logic */
 		switch(state) {
 		case STATE_IDLE:
+			printf("CONTROL: State = IDLE\r\n");
 			// Got BARCODE
 			if(barcode_num_messages > 0) {
+				xQueueSend(g_screen_status_queue, "Got barcode wait rfid", 0);
 				// Wait for a fresh RFID tag and go to GOTBARCODE state
 				while(xQueueReceive( g_rfid_queue, &rfid_message, ( portTickType ) 0 )); // We want a fresh rfid tag, so empty queue
 				next_state = STATE_GOTBARCODE;
 			}
 			// Got RFID tag
 			else if(rfid_num_messages > 0) {
+				xQueueSend(g_screen_status_queue, "Got rfid", 0);
 				struct product_t *product;
 				xQueueReceive( g_rfid_queue, &rfid_message, ( portTickType ) 0 );
 
@@ -73,6 +85,8 @@ void control_task()
 
 			break;
 		case STATE_GOTBARCODE:
+			printf("CONTROL: State = GOTBARCODE\r\n");
+
 			// We got a barcode.  Wait for a RFID tag to show up
 			if(rfid_num_messages > 0) {
 				struct product_t *product;
@@ -97,6 +111,8 @@ void control_task()
 			}
 			break;
 		case STATE_FRESHEN:
+			printf("CONTROL: State = FRESHEN\r\n");
+			xQueueSend(g_screen_status_queue, "FRESHEN: Ignore rfid/bar", 0);
 			vTaskDelay(500);		//Put the thread to sleep for a while
 			// Clear RFID and BARCODE queues on wakeup
 			while(xQueueReceive( g_rfid_queue, &rfid_message, ( portTickType ) 0 ));

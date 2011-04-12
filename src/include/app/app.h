@@ -19,5 +19,14 @@ extern xQueueHandle g_keypad_queue;			// Keypad presses
 // Control -> Output queues
 extern xQueueHandle g_screen_status_queue;	// Screen (system status)
 
+// Message types
+typedef struct {
+	char data[11];
+} barcode_msg_t;
+
+typedef struct {
+	char data[20];
+} status_msg_t;
+
 
 #endif /* APP_H_ */

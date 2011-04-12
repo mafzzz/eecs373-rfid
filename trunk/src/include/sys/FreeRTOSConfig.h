@@ -50,6 +50,7 @@
     http://www.OpenRTOS.com - Commercial support, development, porting,
     licensing and training services.
 */
+#include "sys/defs.h"
 
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
@@ -69,18 +70,20 @@
 #define configUSE_PREEMPTION		1
 #define configUSE_IDLE_HOOK			0
 #define configUSE_TICK_HOOK			0
-#define configCPU_CLOCK_HZ			( ( unsigned long ) 100000 )
+#define configCPU_CLOCK_HZ			( ( unsigned long ) CPU_SPEED_HZ )
 #define configTICK_RATE_HZ			( ( portTickType ) 1000 )
-#define configMINIMAL_STACK_SIZE	( ( unsigned short ) 59 )
+#define configMINIMAL_STACK_SIZE	( ( unsigned short ) 256 )
 #define configTOTAL_HEAP_SIZE		( ( size_t ) ( 1468 ) )
-#define configMAX_TASK_NAME_LEN		( 3 )
-#define configUSE_TRACE_FACILITY	0
+#define configMAX_TASK_NAME_LEN		( 15 )
+#define configUSE_TRACE_FACILITY	1
 #define configUSE_16_BIT_TICKS		0
 #define configIDLE_SHOULD_YIELD		0
 #define configUSE_CO_ROUTINES 		0
 
 #define configMAX_PRIORITIES		( ( unsigned portBASE_TYPE ) 2 )
 #define configMAX_CO_ROUTINE_PRIORITIES ( 2 )
+
+#define configUSE_MALLOC_LOCK_UNLOCK	1
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */

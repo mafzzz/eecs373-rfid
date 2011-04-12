@@ -18,9 +18,9 @@ void sensors_task()
 
 		/* Poll the temperature sensor */
 		//current_temp = temp_read();
-		current_temp = 123;
+		current_temp = temp_read();
 
-		/* Pass to control unit */
+		/* Pass to screen */
 		xQueueSend(g_sensors_queue, &current_temp, 0);
 	}
 }

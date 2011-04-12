@@ -10,7 +10,10 @@ ace_channel_handle_t adc_handle;
 
 void temp_init() {
 	ACE_init();
-	adc_handle = ACE_get_channel_handle((const uint8_t *)TEMP_CHANNEL_HANDLE);
+	adc_handle = ACE_get_channel_handle((const uint8_t *)"ADC_input0");
+	if(adc_handle == INVALID_CHANNEL_HANDLE) {
+		printf("BAD CHANNEL HANDLE FOR TEMP SENSOR\n\r");
+	}
 }
 
 

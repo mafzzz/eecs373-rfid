@@ -40,8 +40,8 @@ MEMORY
 
 RAM_START_ADDRESS = 0x20000000; 	/* Must be the same value MEMORY region ram ORIGIN above. */
 RAM_SIZE = 64k; 					/* Must be the same value MEMORY region ram LENGTH above. */
-MAIN_STACK_SIZE = 8k; 				/* Cortex main stack size. */
-PROCESS_STACK_SIZE	= 4k; 			/* Cortex process stack size (only available with OS extensions).*/
+MAIN_STACK_SIZE = 2k; 				/* Cortex main stack size. */
+PROCESS_STACK_SIZE	= 2k; 			/* Cortex process stack size (only available with OS extensions).*/
 
 /*******************************************************************************
  * End of board customization.

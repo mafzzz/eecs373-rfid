@@ -1,5 +1,5 @@
 /*
-    FreeRTOS V6.1.1 - Copyright (C) 2011 Real Time Engineers Ltd.
+    FreeRTOS V6.0.5 - Copyright (C) 2010 Real Time Engineers Ltd.
 
     ***************************************************************************
     *                                                                         *
@@ -10,7 +10,7 @@
     *    + Looking for basic training,                                        *
     *    + Wanting to improve your FreeRTOS skills and productivity           *
     *                                                                         *
-    * then take a look at the FreeRTOS books - available as PDF or paperback  *
+    * then take a look at the FreeRTOS eBook                                  *
     *                                                                         *
     *        "Using the FreeRTOS Real Time Kernel - a Practical Guide"        *
     *                  http://www.FreeRTOS.org/Documentation                  *
@@ -75,17 +75,34 @@ task.h is included from an application file. */
 
 #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
 
+#if configUSE_MALLOC_LOCK_UNLOCK == 1
+/*-----------------------------------------------------------*/
+void __malloc_lock(struct _reent* REENT)
+{
+	vTaskSuspendAll();
+}
+
+void __malloc_unlock(struct _reent* REENT)
+{
+	xTaskResumeAll();
+}
+#endif
+
 /*-----------------------------------------------------------*/
 
 void *pvPortMalloc( size_t xWantedSize )
 {
-	void *pvReturn;
+void *pvReturn;
 
+#if configUSE_MALLOC_LOCK_UNLOCK != 1
 	vTaskSuspendAll();
 	{
 		pvReturn = malloc( xWantedSize );
 	}
 	xTaskResumeAll();
+#else
+	pvReturn = malloc( xWantedSize );
+#endif
 
 	#if( configUSE_MALLOC_FAILED_HOOK == 1 )
 	{
@@ -105,11 +122,15 @@ void vPortFree( void *pv )
 {
 	if( pv )
 	{
+#if configUSE_MALLOC_LOCK_UNLOCK != 1
 		vTaskSuspendAll();
 		{
 			free( pv );
 		}
 		xTaskResumeAll();
+#else
+			free( pv );
+#endif
 	}
 }
 

@@ -32,11 +32,11 @@ g_pfnVectors:
     .word  0
     .word  0
     .word  0
-    .word  SVC_Handler
+    .word  vPortSVCHandler
     .word  DebugMon_Handler
     .word  0
-    .word  PendSV_Handler
-    .word  SysTick_Handler
+    .word  xPortPendSVHandler
+    .word  xPortSysTickHandler
     .word  WdogWakeup_IRQHandler
     .word  BrownOut_1_5V_IRQHandler
     .word  BrownOut_3_3V_IRQHandler
@@ -69,8 +69,8 @@ g_pfnVectors:
     .word  0
     .word  0
     .word  Fabric_IRQHandler
-    .word  GPIO0_IRQHandler
-    .word  GPIO1_IRQHandler
+    .word  Barcode_Handler
+    .word  RFID_Handler
     .word  GPIO2_IRQHandler
     .word  GPIO3_IRQHandler
     .word  GPIO4_IRQHandler

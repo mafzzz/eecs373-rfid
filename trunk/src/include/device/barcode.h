@@ -23,6 +23,8 @@ UART_instance_t g_barcode_uart;
 /* Functions */
 void barcode_init();
 
+void barcode_task();
+
 
 
 #endif /* BARCODE_H_ */

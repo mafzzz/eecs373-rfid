@@ -11,8 +11,6 @@
 #include "driver/mss_ace.h"
 #include "driver/mss_uart.h"
 
-#define TEMP_CHANNEL_HANDLE "TEMP_INPUT"
-
 /* Initializes necessary peripherals for reading temperature. */
 void temp_init();
 

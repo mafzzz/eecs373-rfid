@@ -1101,9 +1101,7 @@
 <option id="gnu.c.compiler.option.include.paths.947420890" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 <listOptionValue builtIn="false" value="&quot;${workspace_loc:/src/include}&quot;"/>
 </option>
-<option id="gnu.c.compiler.option.preprocessor.def.symbols.750011653" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
-<listOptionValue builtIn="false" value="ACTEL_STDIO_THRU_UART"/>
-</option>
+<option id="gnu.c.compiler.option.preprocessor.def.symbols.750011653" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.526844516" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 </tool>
 <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug.325693218" name="GNU C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cross.cortexm3.exe.debug">

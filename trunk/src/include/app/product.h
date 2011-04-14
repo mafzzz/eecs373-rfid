@@ -11,6 +11,8 @@
 
 #include "sys/uthash.h"
 
+#include "app/app.h"
+
 
 typedef struct nutrition_t {
 	uint32_t servings_total;
@@ -29,9 +31,9 @@ typedef struct nutrition_t {
 } nutrition_t;
 
 typedef struct product_t {
-	uint32_t rfid_id;
-	char * upc;
-	char * name;
+	rfid_t rfid;
+	barcode_t upc;
+	char name[MAX_NAME_LEN];
 	uint32_t stocked;
 	nutrition_t *nutrition;
 
@@ -48,7 +50,8 @@ typedef struct product_t {
 void nutrition_init(nutrition_t *nutrition, char * upc);
 
 /* Product functionality */
-void product_init(product_t *product, uint32_t rfid_id, char * upc, int do_nutrition_search);
+void product_init(product_t *product, rfid_t rfid, barcode_t upc, int do_nutrition_search);
 
+void product_get_name(barcode_t *upc, char * name);
 
 #endif /* PRODUCT_H_ */

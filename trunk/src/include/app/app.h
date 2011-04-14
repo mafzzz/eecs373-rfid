@@ -7,6 +7,8 @@
 #include "sys/FreeRTOS.h"
 #include "sys/queue.h"
 
+#include "device/rfid.h"
+
 #ifndef APP_H_
 #define APP_H_
 
@@ -19,14 +21,25 @@ extern xQueueHandle g_keypad_queue;			// Keypad presses
 // Control -> Output queues
 extern xQueueHandle g_screen_status_queue;	// Screen (system status)
 
-// Message types
-typedef struct {
-	char data[11];
-} barcode_msg_t;
+#define MAX_NAME_LEN 20 // Maximum name length of a product
+#define BARCODE_LEN 11 // 1 byte for string terminator
+#define RFID_LEN 16 // 1 byte for string terminator
+#define BARCODE_MSG_LEN (BARCODE_LEN+1)
+#define RFID_MSG_LEN (RFID_LEN+1)
+#define STATUS_MSG_LEN 40
 
 typedef struct {
-	char data[20];
-} status_msg_t;
+	char data [BARCODE_MSG_LEN];
+	int test;
+} barcode_t;
 
+typedef struct {
+	char data [RFID_MSG_LEN];
+	int test;
+} rfid_t;
+
+typedef struct status_t {
+	char data [STATUS_MSG_LEN];
+} status_t;
 
 #endif /* APP_H_ */

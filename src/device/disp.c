@@ -173,9 +173,20 @@ void disp_set_backlight(int level)
 	disp_req(&req);
 }
 
+void disp_set_baud(char rate)
+{
+	disp_req_t req;
+	uint8_t cmd[3];
+	cmd[0] = DISP_CMD_START;
+	cmd[1] = DISP_CMD_BAUD;
+	cmd[2] = rate;
+	req.data = cmd;
+	req.size = 3;
+	disp_req(&req);
+}
+
 void disp_req(disp_req_t *req)
 {
-	vTaskSuspendAll();
 	UART_send(&g_disp_uart, req->data, req->size);
-	xTaskResumeAll();
+	vTaskDelay(portTICK_RATE_MS * 60);
 }

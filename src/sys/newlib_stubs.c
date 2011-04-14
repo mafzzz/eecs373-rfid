@@ -225,7 +225,7 @@ int _wait(int *status)
 int _write_r( void * reent, int file, char * ptr, int len )
 {
 #ifdef ACTEL_STDIO_THRU_UART
-	vPortEnterCritical();
+	vTaskSuspendAll();
 	/*--------------------------------------------------------------------------
 	 * Initialize the UART driver if it is the first time this function is
 	 * called.
@@ -240,7 +240,7 @@ int _write_r( void * reent, int file, char * ptr, int len )
 	 * Output text to the UART.
 	 */
 	MSS_UART_polled_tx( &g_mss_uart0, (uint8_t *)ptr, len );
-	vPortExitCritical();
+	xTaskResumeAll();
 	return len;
 #else	/* ACTEL_STDIO_THRU_UART */
 	return 0;

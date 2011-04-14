@@ -20,6 +20,7 @@
 #define DISP_CMD_BACKLIGHT	0x02
 #define DISP_CMD_LINE		0x0C
 #define DISP_CMD_CLEAR_RECT	0x05
+#define DISP_CMD_BAUD		0x07
 
 #define DISP_MAX_STRLEN 100 /* For disp_print */
 
@@ -48,5 +49,6 @@ void disp_invert();
 void disp_demo();
 void disp_set_backlight(int level);
 void disp_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
+void disp_set_baud(char rate);
 
 #endif

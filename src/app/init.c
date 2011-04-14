@@ -11,17 +11,14 @@
 /* Device */
 #include "device/barcode.h"
 #include "device/rfid.h"
+#include "device/keypad.h"
 
 /* Application */
 #include "app/app.h"
 #include "app/sensors.h"
 #include "app/screen.h"
 #include "app/control.h"
-
-
-/* Device wakeup semaphores */
-xSemaphoreHandle barcode_sem;
-xSemaphoreHandle rfid_sem;
+#include "app/inventory.h"
 
 /* Tasks */
 xTaskHandle screen_task_handle; // Responsible for updating the screen
@@ -30,6 +27,7 @@ xTaskHandle barcode_task_handle; // Responsible for receiving barcode tags and d
 xTaskHandle sound_task_handle; // Responsible for outputting sound requests
 xTaskHandle sensors_task_handle; // Responsible for receiving temperature data at a reasonable rate
 xTaskHandle control_task_handle;
+xTaskHandle keypad_task_handle;
 
 /* Queues */
 // Input -> Control queues
@@ -46,7 +44,7 @@ const char* rfid_task_name = "RFIDTASK";
 const char* barcode_task_name = "BARCODETASK";
 const char* sensors_task_name = "SENSORSTASK";
 const char* control_task_name = "CONTROLTASK";
-
+const char* keypad_task_name = "KEYPADTASK";
 
 int main()
 {
@@ -54,32 +52,35 @@ int main()
 	printf("Init starting\r\n");
 	/* TODO Configure hardware */
 
-	/* Create device wakeup semaphores */
-	vSemaphoreCreateBinary(barcode_sem);
-	vSemaphoreCreateBinary(rfid_sem);
-
 	/* Create the tasks */
 	printf("Creating tasks\r\n");
 	xTaskCreate( screen_task,  (signed portCHAR * )screen_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &screen_task_handle );
-	//xTaskCreate( sensors_task,  (signed portCHAR * )sensors_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &sensors_task_handle );
-	//xTaskCreate( control_task,  (signed portCHAR * )control_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &control_task_handle );
-	xTaskCreate( barcode_task,  (signed portCHAR * )barcode_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &barcode_task_handle );
-	xTaskCreate( rfid_task,  (signed portCHAR * )rfid_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &rfid_task_handle );
-
+	xTaskCreate( sensors_task,  (signed portCHAR * )sensors_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &sensors_task_handle );
+	xTaskCreate( control_task,  (signed portCHAR * )control_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 0, &control_task_handle );
+	xTaskCreate( barcode_task,  (signed portCHAR * )barcode_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 1, &barcode_task_handle );
+	xTaskCreate( rfid_task,  (signed portCHAR * )rfid_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 1, &rfid_task_handle );
+	xTaskCreate( keypad_task,  (signed portCHAR * )keypad_task_name, DEFAULT_TASK_STACK_SIZE, NULL, 1, &keypad_task_handle );
 
 	/* Create the queues */
 	printf("Creating Queues\r\n");
-	g_rfid_queue = xQueueCreate(10, sizeof(uint32_t));
-	g_barcode_queue = xQueueCreate(10, sizeof(char) * 11);
-	g_sensors_queue = xQueueCreate(10, sizeof(uint32_t));
-	g_keypad_queue = xQueueCreate(10, sizeof(uint32_t));
-	g_screen_status_queue = xQueueCreate(10, sizeof(char) * 20);
+	g_rfid_queue = xQueueCreate(1, sizeof(rfid_t));
+	g_barcode_queue = xQueueCreate(1, sizeof(barcode_t));
+	g_sensors_queue = xQueueCreate(1, sizeof(uint32_t));
+	g_keypad_queue = xQueueCreate(1, sizeof(keypad_t));
+	g_screen_status_queue = xQueueCreate(1, sizeof(status_t));
+
+	/* Init GPIO */
+	MSS_GPIO_init();
 
 	/* Initialize devices */
 	screen_init();
 	temp_init();
 	barcode_init();
 	rfid_init();
+
+	/* Initialize application data */
+	inventory_init();
+
 
 	/* Start the scheduler, this should never return */
 	printf("Starting scheduler\r\n");

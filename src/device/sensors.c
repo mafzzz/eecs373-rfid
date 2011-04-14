@@ -13,14 +13,15 @@ void sensors_task()
 {
 	int current_temp;
 	for(;;) {
-		/* Put thread to sleep until we want to repoll */
-		vTaskDelay(portTICK_RATE_MS * SENSOR_POLL_MS);
-
 		/* Poll the temperature sensor */
 		//current_temp = temp_read();
 		current_temp = temp_read();
 
 		/* Pass to screen */
 		xQueueSend(g_sensors_queue, &current_temp, 0);
+
+		/* Put thread to sleep until we want to repoll */
+		vTaskDelay(portTICK_RATE_MS * SENSOR_POLL_MS);
+
 	}
 }

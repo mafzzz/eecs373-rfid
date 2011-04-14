@@ -3,7 +3,7 @@
 
 #include <inttypes.h>
 
-#define SCREEN_TOP 119
+#define SCREEN_TOP 109
 #define SCREEN_BOTTOM 10
 #define SCREEN_LEFT 0
 #define SCREEN_RIGHT 159
